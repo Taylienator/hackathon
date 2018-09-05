@@ -34,7 +34,7 @@ class App extends Component {
 //here i will create my axios call using .get request involving this.state.restaurant and using the url and api key i have
   locateRestaurant(){
     Axios
-    .get(`https://www.mapquestapi.com/geocoding/v1/address?key=cbeZ1Cg3c58tcyv7QtElA05uCOHcGyxH&inFormat=kvp&outFormat=json&location=${this.state.location}&thumbMaps=false`)
+    .get(`https://www.mapquestapi.com/geocoding/v1/address?key=REACT_APP_API_KEYinFormat=kvp&outFormat=json&location=${this.state.location}&thumbMaps=false`)
     .then(response=>{
       var lat = response.data.results[0].locations[0].latLng.lat;
       var long = response.data.results[0].locations[0].latLng.lng;
