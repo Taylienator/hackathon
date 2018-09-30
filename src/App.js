@@ -70,7 +70,7 @@ render() {
       
 
           
-          <textarea placeholder='Type in your city, ex. `Turlock, CA`' onChange ={this.handleLocation}></textarea>
+          <input placeholder='Type in your city, ex. `Turlock, CA`' onChange ={this.handleLocation}></input>
            
             <button onClick={this.locateRestaurant}>Search Restaurants!</button>
             <div className="jumbotron jumbotron-fluid padding0top-4">
